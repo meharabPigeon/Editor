@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OptionView_ViewController" customModule="Editor" customModuleProvider="target">
+            <connections>
+                <outlet property="collage_OptionTitle" destination="2b7-ey-OWi" id="Pbm-wM-F2v"/>
+                <outlet property="collage_Option_Button" destination="zWY-kE-ARa" id="Mkq-Sa-Z22"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="kga-7R-Der"/>
+                <outlet property="createNewLabel" destination="opm-3X-WMc" id="HOY-sy-imp"/>
+                <outlet property="photo_OptionTitle" destination="3Zy-RT-Ng8" id="JeD-b8-SQn"/>
+                <outlet property="photo_Option_Button" destination="1gf-SJ-but" id="Kw3-5n-GR9"/>
+                <outlet property="subView" destination="Fam-N3-Vef" id="KXk-fE-JW8"/>
+                <outlet property="video_OptionTitle" destination="WPP-oL-6Xa" id="saN-8P-I2Q"/>
+                <outlet property="video_Option_Button" destination="qCn-W6-Pcf" id="Woi-Ny-Hwl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="500" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create new label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opm-3X-WMc">
+                    <rect key="frame" x="10" y="5" width="470" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fam-N3-Vef">
+                    <rect key="frame" x="0.0" y="50" width="500" height="130"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="95h-PG-uvO">
+                            <rect key="frame" x="20" y="10" width="460" height="80"/>
+                            <subviews>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCn-W6-Pcf">
+                                    <rect key="frame" x="0.0" y="5" width="70" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="00b-0x-tiF"/>
+                                        <constraint firstAttribute="height" constant="70" id="y0p-AG-bir"/>
+                                    </constraints>
+                                    <state key="normal" image="video_Option" backgroundImage="videoBG"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="35"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1gf-SJ-but">
+                                    <rect key="frame" x="195" y="5" width="70" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="70" id="dJj-ar-Zsh"/>
+                                        <constraint firstAttribute="width" constant="70" id="hZK-UB-Mqj"/>
+                                    </constraints>
+                                    <state key="normal" image="photo_Option" backgroundImage="photoBG"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="35"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWY-kE-ARa">
+                                    <rect key="frame" x="390" y="5" width="70" height="70"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="6mn-fG-s42"/>
+                                        <constraint firstAttribute="height" constant="70" id="wgD-UW-jEj"/>
+                                    </constraints>
+                                    <state key="normal" image="collage_Option" backgroundImage="collageBG"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="35"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RqJ-53-DQh">
+                            <rect key="frame" x="20" y="95" width="460" height="20"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPP-oL-6Xa">
+                                    <rect key="frame" x="0.0" y="0.0" width="70" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="70" id="SVk-Bu-i2V"/>
+                                        <constraint firstAttribute="height" constant="20" id="qWl-cd-MrP"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zy-RT-Ng8">
+                                    <rect key="frame" x="195" y="0.0" width="70" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="HUQ-BI-MoP"/>
+                                        <constraint firstAttribute="width" constant="70" id="Nb5-Xf-hY7"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2b7-ey-OWi">
+                                    <rect key="frame" x="390" y="0.0" width="70" height="20"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="FoD-01-gjt"/>
+                                        <constraint firstAttribute="width" constant="70" id="c3O-eP-9ic"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="95h-PG-uvO" firstAttribute="leading" secondItem="Fam-N3-Vef" secondAttribute="leading" constant="20" id="0q7-A3-U8W"/>
+                        <constraint firstItem="RqJ-53-DQh" firstAttribute="leading" secondItem="Fam-N3-Vef" secondAttribute="leading" constant="20" id="6tt-r2-WEb"/>
+                        <constraint firstAttribute="trailing" secondItem="RqJ-53-DQh" secondAttribute="trailing" constant="20" id="CAD-mv-omL"/>
+                        <constraint firstItem="RqJ-53-DQh" firstAttribute="top" secondItem="95h-PG-uvO" secondAttribute="bottom" constant="5" id="Nn4-DI-4Qd"/>
+                        <constraint firstAttribute="trailing" secondItem="95h-PG-uvO" secondAttribute="trailing" constant="20" id="OQP-Nj-sd8"/>
+                        <constraint firstAttribute="bottom" secondItem="RqJ-53-DQh" secondAttribute="bottom" constant="15" id="YR4-uc-wWP"/>
+                        <constraint firstAttribute="bottom" secondItem="95h-PG-uvO" secondAttribute="bottom" constant="40" id="k4V-GA-s1I"/>
+                        <constraint firstItem="95h-PG-uvO" firstAttribute="top" secondItem="Fam-N3-Vef" secondAttribute="top" constant="10" id="ki6-p2-E4g"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="opm-3X-WMc" secondAttribute="trailing" constant="20" id="COc-RN-PIu"/>
+                <constraint firstItem="Fam-N3-Vef" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="IyX-XQ-TK3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Fam-N3-Vef" secondAttribute="bottom" id="Qnz-nB-926"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Fam-N3-Vef" secondAttribute="trailing" id="Rpe-5E-UDZ"/>
+                <constraint firstItem="opm-3X-WMc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="Uwx-ni-N9x"/>
+                <constraint firstItem="Fam-N3-Vef" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="j2z-Gr-Hoy"/>
+                <constraint firstItem="opm-3X-WMc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="jYK-8L-5wN"/>
+                <constraint firstItem="Fam-N3-Vef" firstAttribute="top" secondItem="opm-3X-WMc" secondAttribute="bottom" constant="5" id="r2r-i9-Lwh"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="15.942028985507248" y="185.86956521739131"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="collageBG" width="760" height="558"/>
+        <image name="collage_Option" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="photoBG" width="764" height="550"/>
+        <image name="photo_Option" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="videoBG" width="870" height="540"/>
+        <image name="video_Option" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
+</document>

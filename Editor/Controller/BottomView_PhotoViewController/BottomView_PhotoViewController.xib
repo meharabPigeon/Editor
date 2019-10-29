@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BottomView_PhotoViewController" customModule="Editor" customModuleProvider="target">
+            <connections>
+                <outlet property="albumTitleButton" destination="1Ft-bk-D44" id="uWS-Ie-G2M"/>
+                <outlet property="cancel_Button" destination="U2S-8b-rYU" id="yFQ-kP-w0h"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="jc0-bH-p8m"/>
+                <outlet property="multiple_Selection_Button" destination="L6p-vN-Dl9" id="KuC-aA-32e"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="424" height="72"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2S-8b-rYU">
+                    <rect key="frame" x="15" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="WCe-Tr-DZ3"/>
+                        <constraint firstAttribute="width" constant="40" id="Zqm-P8-vU1"/>
+                    </constraints>
+                    <state key="normal" image="cancel"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6p-vN-Dl9">
+                    <rect key="frame" x="369" y="0.0" width="40" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="nYW-pV-gG3"/>
+                        <constraint firstAttribute="width" constant="40" id="zVk-BR-eaL"/>
+                    </constraints>
+                    <state key="normal" image="double_Tick"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ft-bk-D44">
+                    <rect key="frame" x="137" y="0.0" width="150" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="SBI-30-sSA"/>
+                        <constraint firstAttribute="width" constant="150" id="UgQ-XF-xNe"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="L6p-vN-Dl9" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="4fG-h5-MXN"/>
+                <constraint firstItem="1Ft-bk-D44" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Bpw-jb-jLt"/>
+                <constraint firstItem="U2S-8b-rYU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="MWp-jf-mvK"/>
+                <constraint firstItem="1Ft-bk-D44" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Tp8-mm-6a8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="L6p-vN-Dl9" secondAttribute="trailing" constant="15" id="cqn-vZ-5Zg"/>
+                <constraint firstItem="U2S-8b-rYU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="j5P-PD-FGe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-23.188405797101453" y="29.347826086956523"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cancel" width="32" height="32"/>
+        <image name="double_Tick" width="32" height="32"/>
+    </resources>
+</document>
